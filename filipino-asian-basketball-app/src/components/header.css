@@ -1,0 +1,41 @@
+/*  Johannes Mendoza
+    header.css
+    A CSS file for the header component*/
+    
+.header{
+    background-color: #1D1D1D;
+    height: 80px;
+}
+.header img{
+    float: left;
+    width: 80px;
+    height: 80px;
+}
+.header h1{
+    display: block;
+    /*top: 18px;
+    left: 10px;*/
+}
+.nav-bar button{
+    font-size: medium;
+    color: rgb(216, 216, 216);
+    display: block;
+    float: left;
+    padding: 27px 15px;
+    background-color: #1D1D1D;
+    border: 1px solid #1D1D1D;
+}
+.nav-bar button:hover{
+    background-color: #1D1D1D;
+    color: white;
+    border: 1px solid #1D1D1D;
+}
+.nav-bar button:active{
+    outline: 0;
+}
+.nav-bar button:focus{
+    outline: 0;
+}
+.log-in button{
+    float: right;
+}
