@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
+import { Route, Switch, Redirect } from "react-router-dom";
 import logo from './logo.svg';
 import './App.css';
+import Scores from './components/scores';
 import NavBar from './components/navbar';
+import Home from "./components/home";
 
 /*function App() {
   return (
@@ -29,6 +32,12 @@ class App extends Component {
     return (
       <div>
         <NavBar />
+        <div className="content">
+          <Switch>
+            <Route path="/scores" component={Scores} />
+            <Route path="/" exact component={Home} />
+          </Switch>
+        </div>
       </div>
     )
   }
