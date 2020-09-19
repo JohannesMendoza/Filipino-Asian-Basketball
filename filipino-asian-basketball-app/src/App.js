@@ -5,6 +5,8 @@ import './App.css';
 import Scores from './components/scores';
 import NavBar from './components/navbar';
 import Home from "./components/home";
+import Standings from "./components/standings";
+import Statistics from "./components/statistics";
 
 /*function App() {
   return (
@@ -34,8 +36,10 @@ class App extends Component {
         <NavBar />
         <div className="content">
           <Switch>
-            <Route path="/scores" component={Scores} />
             <Route path="/" exact component={Home} />
+            <Route path="/scores" component={Scores} />
+            <Route path="/standings" component={Standings} />
+            <Route path="/statistics" component={Statistics} />
           </Switch>
         </div>
       </div>

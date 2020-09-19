@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Link from 'react-router-dom';
+import Link from "react-router-dom";
 
 class Standings extends Component {
     render() {
@@ -8,3 +8,5 @@ class Standings extends Component {
         );
     }
 }
+
+export default Standings;

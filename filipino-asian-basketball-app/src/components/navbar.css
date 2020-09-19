@@ -4,12 +4,12 @@
     
     .header{
         background-color: #1D1D1D;
-        height: 80px;
+        height: 50px;
     }
     .header img{
         float: left;
-        width: 80px;
-        height: 80px;
+        width: 70px;
+        height: 50px;
     }
     .navbar h1{
         display: block;
@@ -24,7 +24,7 @@
         color: rgb(216, 216, 216);
         display: block;
         float: left;
-        padding: 27px 15px;
+        padding: 12px 15px;
         background-color: #1D1D1D;
         border: 1px solid #1D1D1D;
     }
