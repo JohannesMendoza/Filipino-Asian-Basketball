@@ -26,4 +26,12 @@ const NavBar = () => {
     )
 }
 
+/*class NavBar extends Component {
+    state = {}
+    render() {
+        return (<div>
+            <h1>THIS IS THE NAVBAR</h1>
+        </div>);
+    }
+}*/
 export default NavBar;

@@ -3,6 +3,7 @@ import { Route, Switch, Redirect } from "react-router-dom";
 import logo from './logo.svg';
 import './App.css';
 import Scores from './components/scores';
+import Score from './components/score';
 import NavBar from './components/navbar';
 import Home from "./components/home";
 import Standings from "./components/standings";
