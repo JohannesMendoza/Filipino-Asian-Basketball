@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './score.css';
+import './styles/score.css';
 import App from "../App";
 import gilasLogo from './gilasLogo.png';
 import fastLogo from './fastLogo.png';
