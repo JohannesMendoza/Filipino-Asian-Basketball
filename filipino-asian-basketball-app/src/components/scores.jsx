@@ -9,7 +9,26 @@ class Scores extends Component {
     render() {
         return (
             <React.Fragment>
-                <h1>This is the Scores Component (Written as a class)</h1>
+                <Score />
+                <Score />
+                <Score />
+                <Score />
+                <Score />
+                <Score />
+                <Score />
+                <Score />
+                <Score />
+                <Score />
+                <Score />
+                <Score />
+                <Score />
+                <Score />
+                <Score />
+                <Score />
+                <Score />
+                <Score />
+                <Score />
+                <Score />
                 <Score />
                 <Score />
                 <Score />

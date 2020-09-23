@@ -8,6 +8,9 @@ import NavBar from './components/navbar';
 import Home from "./components/home";
 import Standings from "./components/standings";
 import Statistics from "./components/statistics";
+import SignUp from "./components/signUp"
+import LogIn from "./components/logIn"
+import FABApparel from './components/fabApparel';
 
 /*function App() {
   return (
@@ -41,6 +44,9 @@ class App extends Component {
             <Route path="/scores" component={Scores} />
             <Route path="/standings" component={Standings} />
             <Route path="/statistics" component={Statistics} />
+            <Route path="/FABApparel" component={FABApparel} />
+            <Route path="/signUp" component={SignUp} />
+            <Route path="/logIn" component={LogIn} />
           </Switch>
         </div>
       </div>

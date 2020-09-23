@@ -1,0 +1,37 @@
+.shopMenuItemContainer{
+    display: inline;
+}
+
+.itemImg{
+    display: block;
+    width: 300px;
+    /*border-top-left-radius: 20px;
+    border-top-right-radius: 20px;*/
+}
+.itemTitle{
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+.itemPrice{
+    display: block;
+    clear: both;
+    text-align: center;
+}
+.itemButton{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding: 0px;
+    background-color: white;
+    border: none;
+    /*border-radius: 20px;*/
+    transition: box-shadow .3s;
+    margin: 10px;
+}
+.itemButton:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+} 
+
+.itemButton:focus{
+    outline: none;
+    border-color: black;
+}

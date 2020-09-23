@@ -1,0 +1,33 @@
+.form{
+    width: max-content;
+    margin: 0px auto;
+}
+.formTitle{
+    width: max-content;
+    margin: auto;
+    margin-top: 50px;
+}
+.signUpForm{
+    margin-top: 25px;
+    border: 1px solid rgb(223, 225, 229);
+    border-radius: 20px;
+    padding: 20px 20px;
+    border-radius: 15px;
+}
+.submitButton{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 15px;
+    color: #9D9D9D;
+    background-color: #1D1D1D;
+    margin: auto;
+}
+.submitButton:hover{
+    color: lightgray;
+    outline: none;
+}
+.submitButton:focus{
+    color: white;
+    outline: none;
+}
