@@ -11,6 +11,7 @@ import Statistics from "./components/statistics";
 import SignUp from "./components/signUp"
 import LogIn from "./components/logIn"
 import FABApparel from './components/fabApparel';
+import ShopItem from './components/shopItem';
 
 /*function App() {
   return (
@@ -41,12 +42,13 @@ class App extends Component {
         <div className="content">
           <Switch>
             <Route path="/" exact component={Home} />
-            <Route path="/scores" component={Scores} />
+            <Route name="Scores" path="/scores" component={Scores} />
             <Route path="/standings" component={Standings} />
             <Route path="/statistics" component={Statistics} />
             <Route path="/FABApparel" component={FABApparel} />
             <Route path="/signUp" component={SignUp} />
             <Route path="/logIn" component={LogIn} />
+            <Route path="/shopItem" component={ShopItem} />
           </Switch>
         </div>
       </div>
