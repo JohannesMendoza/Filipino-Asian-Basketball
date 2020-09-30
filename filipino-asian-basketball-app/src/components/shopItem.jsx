@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import './styles/shopItem.css'
 class ShopItem extends Component {
     state = {}
     render() {
@@ -9,9 +9,9 @@ class ShopItem extends Component {
         return (
             <div className="shopItemContainer">
                 <h1>"hello world"</h1>
-                <img src={this.props.history.location.state.image} />
-                <h1>{this.props.history.location.state.title}</h1>
-                <p>{this.props.history.location.state.price}</p>
+                <img className="shopItemImage" src={this.props.history.location.state.image} />
+                <h1 className="shopItemTitle">{this.props.history.location.state.title}</h1>
+                <p className="shopItemPrice">{this.props.history.location.state.price}</p>
             </div>
         );
     }

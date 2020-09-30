@@ -22,10 +22,17 @@
     color: #9D9D9D;
     background-color: #1D1D1D;
     margin: auto;
+    font-weight: bold;
+    border-style: none;
+    opacity: 0.6;
+    padding: 0px 10px 0px 10px;
 }
 .submitButton:hover{
-    color: lightgray;
+    opacity: 1;
     outline: none;
+}
+.submitButton:active{
+    border-style: none;
 }
 .submitButton:focus{
     color: white;
