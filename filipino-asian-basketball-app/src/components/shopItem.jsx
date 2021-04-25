@@ -8,10 +8,20 @@ class ShopItem extends Component {
         console.log(this.props);
         return (
             <div className="shopItemContainer">
-                <h1>"hello world"</h1>
                 <img className="shopItemImage" src={this.props.history.location.state.image} />
-                <h1 className="shopItemTitle">{this.props.history.location.state.title}</h1>
-                <p className="shopItemPrice">{this.props.history.location.state.price}</p>
+                <div className="shopItemDetails">
+                    <h1 className="shopItemTitle">{this.props.history.location.state.title}</h1>
+                    <p className="shopItemPrice">{this.props.history.location.state.price}</p>
+                    <label for="size">Size: </label>
+                    <select id="size" name="size">
+                        <option value="xs">XS</option>
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="L">L</option>
+                        <option value="xl">XL</option>
+                    </select>
+                    <button className="addToCart">Add to Cart</button>
+                </div>
             </div>
         );
     }

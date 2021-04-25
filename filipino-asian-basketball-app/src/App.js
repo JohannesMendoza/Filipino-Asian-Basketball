@@ -12,27 +12,7 @@ import SignUp from "./components/signUp"
 import LogIn from "./components/logIn"
 import FABApparel from './components/fabApparel';
 import ShopItem from './components/shopItem';
-
-/*function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}*/
+import Teams from './components/teams';
 
 class App extends Component {
   render() {
@@ -44,7 +24,7 @@ class App extends Component {
             <Route path="/" exact component={Home} />
             <Route name="Scores" path="/scores" component={Scores} />
             <Route path="/standings" component={Standings} />
-            <Route path="/statistics" component={Statistics} />
+            <Route path="/teams" component={Teams} />
             <Route path="/FABApparel" component={FABApparel} />
             <Route path="/signUp" component={SignUp} />
             <Route path="/logIn" component={LogIn} />
@@ -53,6 +33,9 @@ class App extends Component {
         </div>
       </div>
     )
+  }
+  componentDidMount() {
+    document.title = "Filipino Asian Basketball";
   }
 }
 

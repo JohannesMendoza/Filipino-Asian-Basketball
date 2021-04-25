@@ -1,7 +1,7 @@
 import React from "react";
-import homePhoto from "../images/homePhoto.png";
+import homePhoto from "../images/homePhoto.jpg";
 import './styles/home.css'
-
+import Score from "./score";
 const Home = () => {
     return (
         <div>
@@ -18,6 +18,8 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <Score />
+            <Score />
         </div >
     );
 }

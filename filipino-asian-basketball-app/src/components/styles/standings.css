@@ -1,0 +1,21 @@
+.standingsTable{
+    width: 80%;
+    overflow: scroll;
+    margin: auto auto;
+}
+.standingsDivider{
+    margin-top: 10%;
+    margin-bottom: 10px;
+}
+
+.standingsHeader{
+    text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+    .standingsTable{
+        width: 100%;
+        overflow: scroll;
+        margin: auto auto;
+    }
+}

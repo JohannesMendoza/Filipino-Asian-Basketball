@@ -1,0 +1,24 @@
+.standingsTeamEntry{
+    font-size: larger;
+}
+.standingsTeamData{
+    box-shadow: rgba(33,33,33,.2) 0px 0.5px 0px;
+}
+
+.standingsTeamName{
+    width: 40%;
+}
+
+.standingsTeamNumber{
+    width: 5%;
+}
+
+.standingsTeamIMG{
+    width: 3%;
+}
+
+@media screen and (max-width: 768px){
+    .standingsTeamIMG{
+        width: 10%;
+    }
+}

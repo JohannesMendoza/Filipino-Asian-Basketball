@@ -6,21 +6,24 @@ class ShopMenuItem extends Component {
     state = {}
     render() {
         //console.log(image);
+        const title = this.props.title;
+        console.log(this.props.title);
         return (
             <React.Fragment>
                 <div className="shopMenuItemContainer">
                     <Link to={{
-                        pathname: "/shopItem",
+                        pathname: "/shopItem/" + this.props.id,
                         state: {
                             image: this.props.image,
-                            price: "$19.99",
-                            title: "FAB Logo T-Shirt"
+                            price: this.props.price,
+                            title: this.props.title,
+                            id: this.props.id
                         }
                     }}>
                         <button className="itemButton">
                             <img src={this.props.image} className="itemImg" />
-                            <p className="itemTitle">FAB Logo T-Shirt</p>
-                            <p className="itemPrice">$19.99</p>
+                            <p className="itemTitle">{title}</p>
+                            <p className="itemPrice">${this.props.price}</p>
                         </button>
                     </Link>
                 </div>
@@ -28,5 +31,6 @@ class ShopMenuItem extends Component {
         );
     }
 }
+
 
 export default ShopMenuItem;
