@@ -101,6 +101,14 @@ class Scores extends Component {
     componentWillMount() {
         this.getGames();
     }
+    handler() {
+        console.log("handler");
+        this.setState({
+            saturdayWeek: 2
+        }, () => {
+            this.getGames();
+        })
+    }
     render() {
         if (this.state.sundayTeams.length === 0 || this.state.saturdayTeams.length === 0 || this.state.saturdayGames.length === 0 || this.state.sundayGames.length === 0) {
             console.log('not ready yet');
@@ -112,7 +120,7 @@ class Scores extends Component {
             const sunScores = this.state.sundayGames.map(game => <Score awayIMG={game.team1} homeIMG={game.team2} awayScore={game.s1} homeScore={game.s2} awayName={this.state.sundayTeams.find(team => team.pathName === game.team1).name} homeName={this.state.sundayTeams.find(team => team.pathName === game.team2).name} />)
             return (
                 <React.Fragment>
-                    <div>FABSaturdays<WeekDropdown /></div>
+                    <div>FABSaturdays<WeekDropdown handler={this.handler} /></div>
                     {satScores}
                     <div>FABSundays<WeekDropdown /></div>
                     {sunScores}

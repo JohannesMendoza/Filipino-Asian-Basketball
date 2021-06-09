@@ -36,7 +36,6 @@
     .nav-bar button:hover{
         background-color: #1D1D1D;
         color: white;
-        border: 1px solid #1D1D1D;
     }
     .nav-bar button:active{
         outline: 0;

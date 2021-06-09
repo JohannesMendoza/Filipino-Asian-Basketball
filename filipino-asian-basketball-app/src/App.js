@@ -7,7 +7,7 @@ import Score from './components/score';
 import NavBar from './components/navbar';
 import Home from "./components/home";
 import Standings from "./components/standings";
-import Statistics from "./components/statistics";
+//import Statistics from "./components/statistics";
 import SignUp from "./components/signUp"
 import LogIn from "./components/logIn"
 import FABApparel from './components/fabApparel';

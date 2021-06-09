@@ -1,16 +1,21 @@
 import React, { Component } from 'react';
 
 class WeekDropdown extends Component {
-    /*constructor(props) {
+    constructor(props) {
         this.state = {
-
+            weekSelected: 1
         }
-    }*/
+    }
+    handleChange() {
+        this.setState({
+            weekSelected: event.target.value
+        })
+    }
     render() {
         return (
             <React.Fragment>
                 <form>
-                    <select name="weeks" id="weeks">
+                    <select name="weeks" id="weeks" onClick={this.handleChange}>
                         <option value="1">Week 1</option>
                         <option value="2">Week 2</option>
                         <option value="3">Week 3</option>
